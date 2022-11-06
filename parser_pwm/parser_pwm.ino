@@ -116,11 +116,13 @@ void updateOutput() {
     ms_min = parseMinMax(s, true);
     ms_max = parseMinMax(s, false);
     pos = parsePos(s);
+    /*
     Serial.println(pin);
     Serial.println(enabled);
     Serial.println(ms_min);
     Serial.println(ms_max);
     Serial.println(pos);        // use only for debugging, else put as comment, since Serial.println() adds unread strings into the buffer and slows down the parser
+    */
     if (pin == -1 || excessInput(s)) {
       /*
         Serial.println("Invalid input");      // use only for debugging, else put as comment
